@@ -42,12 +42,12 @@ def display_movie(folder, name):
 
 # --- video_2_images
 import cv2 
-def video_2_images(video_file, image_dir, image_file):  
+def video_2_images(video_file, image_dir, image_file, length):  
 
     # Initial setting
     i = 0
     interval = 1
-    length = 1800  # リミッター
+    #length = 1800  # リミッター
     
     cap = cv2.VideoCapture(video_file)
     fps = cap.get(cv2.CAP_PROP_FPS)  # fps取得
